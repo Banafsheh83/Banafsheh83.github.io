@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!--
+//tutorials used: 
+http://phaser.io/tutorials/coding-tips-005
+http://phaser.io/examples/v2/tilemaps/features-test
+http://phaser.io/examples/v2/tilemaps/map-collide#download
+http://phaser.io/tutorials/getting-started
+http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-states/
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Puzzle Game Quantum Physics" />
+    <title>Puzzle Game</title>
+    <meta charset="utf-8">
+    <script src="phaser.js"></script>
+</head>
+<body>
+
+        <script> //global variables, using in every file     
+            var tileSize = 64;
+            var boardSize_x  = 574;
+            var boardSize_y  = 384;
+        </script>
+        
+        <script src="level1.js"></script>
+        <script src="level2.js"></script>
+        <script src="level3.js"></script>
+        
+        <script>
+                var game = new Phaser.Game(boardSize_x, boardSize_y, Phaser.CANVAS, 'game');
+                 
+                game.state.add("level1",level1);
+                game.state.add("level2",level2);
+                game.state.add("level3",level3);
+                
+                game.state.start("level1");
+		</script>
+</body>
+</html>
