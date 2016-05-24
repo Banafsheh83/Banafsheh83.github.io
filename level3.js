@@ -27,7 +27,7 @@
         create: function () {
 	        
 	        timerLevel3 = game.time.events;
-			timerLevel3.add(Phaser.Timer.SECOND * 10, countDownTimerLevel1, this);
+			timerLevel3.add(Phaser.Timer.SECOND * 10, countDownTimerLevel3, this);
 
             this.map = this.add.tilemap('map');  
             this.map.addTilesetImage('tiles', 'tiles');
@@ -94,8 +94,8 @@
             this.box2.y -= dy;
             if (index == 3 && index2 == 3) {
                 console.log("you won!");
-                alert("You Won!\n Let's play again!");
-                game.state.start("level1")
+                //alert("You Won!\n Are you ready for next level?");
+                game.state.start("level4")
             }
             
             listenerLevel3 ();

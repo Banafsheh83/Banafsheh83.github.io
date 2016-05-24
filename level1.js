@@ -98,7 +98,6 @@
             this.box2.y -= dy;
             if (index == 3 && index2 == 3) {
                 console.log("you won!");
-                alert("You Won!\n Are you ready for next level?");
                 game.state.start("level2");
             }
             listenerLevel1 ();
