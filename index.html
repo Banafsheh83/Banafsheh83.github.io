@@ -26,6 +26,9 @@ http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-
         <script src="level1.js"></script>
         <script src="level2.js"></script>
         <script src="level3.js"></script>
+        <script src="level4.js"></script>
+        <script src="level5.js"></script>
+
         
         <script>
                 var game = new Phaser.Game(boardSize_x, boardSize_y, Phaser.CANVAS, 'game');
@@ -33,6 +36,9 @@ http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-
                 game.state.add("level1",level1);
                 game.state.add("level2",level2);
                 game.state.add("level3",level3);
+                game.state.add("level4",level4);
+                game.state.add("level5",level5);
+
                 
                 game.state.start("level1");
 		</script>
